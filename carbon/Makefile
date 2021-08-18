@@ -1,7 +1,7 @@
 GCC ?= ${ELEMENTS_BASE}/riscv32-unknown-elf/bin/riscv32-unknown-elf
 
 # The intermediate directory for compiled object files.
-BUILD = ${ELEMENTS_BASE}/build/${BOARD}/fpl/
+BUILD = ${ELEMENTS_BASE}/build/${SOC}/${BOARD}/fpl/
 
 DRIVER = ../driver/
 SOURCE = ./
