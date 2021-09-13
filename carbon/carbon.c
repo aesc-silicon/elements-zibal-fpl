@@ -5,7 +5,7 @@ extern void setup_sys(void (*)(void));
 
 void _kernel(void)
 {
-	unsigned char prompt[3] = ">_ ";
+	unsigned char prompt[4] = ">_ \0";
 
 	uart_init();
 
