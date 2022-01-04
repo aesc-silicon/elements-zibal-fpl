@@ -2,13 +2,13 @@
 .global hang
 .global setup_sys
 _head:
-	jal		_init_regs
-	li		sp, 0x80000200
-	j		_kernel
+	jal	_init_regs
+	li	sp, 0x80000200
+	j	_kernel
 
 hang:
 	nop
-	beq		zero, zero, hang
+	beq	zero, zero, hang
 
 setup_sys:
 	csrw	mtvec, a0
