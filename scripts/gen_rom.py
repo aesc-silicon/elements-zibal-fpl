@@ -21,7 +21,7 @@ data = open(filename, "rb")
 fsz = int(os.path.getsize(filename) / 4)
 for c in range(0, fsz):
     opcode = swap32(binascii.hexlify(data.read(4)))
-    print(hex2bin(str(opcode)))
+    print(hex2bin(str(opcode.decode('utf-8'))))
 
 for i in range(fsz, int(romsize / 4)):
     print("00000000000000000000000000010011")
